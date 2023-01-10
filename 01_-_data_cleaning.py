@@ -131,7 +131,12 @@ num_df_rossmann = df_rossmann.drop(['Assortment', 'StateHoliday', 'StoreType'], 
 df_rossmann = pd.concat([num_df_rossmann, one_hot_encoded_data], axis=1)
 
 # to shrink the '*.csv' file, get rid of the unused columns
-df_rossmann = df_rossmann.drop(['Date','Promo2SinceWeek','Promo2SinceYear','PromoInterval'],axis=1)
+df_rossmann = df_rossmann.drop(['Date',
+                                'Promo2SinceWeek',
+                                'Promo2SinceYear',
+                                'PromoInterval',
+                                'CompetitionOpenSinceMonth',
+                                'CompetitionOpenSinceYear'],axis=1)
 
 # saving the cleaned data set as a '*.csv' file
 df_rossmann.to_csv('Data/rossmann_cleaned.csv', index=False)
