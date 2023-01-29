@@ -95,17 +95,12 @@ cat_vars = (df_rossmann.dtypes == 'object')
 object_cols = list(cat_vars[cat_vars].index)
 
 """
-'Date'          -> convert to 'datetime'
+'Date'          -> convert to 'datetime' while loading the data set
 'StateHoliday'  -> one-hot-encoding
 'StoreType'     -> one-hot-encoding
 'Assortment'    -> one-hot-encoding
 'PromoInterval' -> this column has missing values, I skip this one for now
 """
-
-# 'Date' convert to 'datetime'
-df_rossmann['date_parsed'] = df_rossmann['Date'].copy()
-df_rossmann['date_parsed'] = pd.to_datetime(df_rossmann['date_parsed'], format='%Y-%m-%d')
-df_rossmann['date_parsed'].dtypes
 
 # Get number of unique entries in each column with categorical data
 object_nunique = list(map(lambda col: df_rossmann[col].nunique(), object_cols))
@@ -131,8 +126,7 @@ num_df_rossmann = df_rossmann.drop(['Assortment', 'StateHoliday', 'StoreType'], 
 df_rossmann = pd.concat([num_df_rossmann, one_hot_encoded_data], axis=1)
 
 # to shrink the '*.csv' file, get rid of the unused columns
-df_rossmann = df_rossmann.drop(['Date',
-                                'Promo2SinceWeek',
+df_rossmann = df_rossmann.drop(['Promo2SinceWeek',
                                 'Promo2SinceYear',
                                 'PromoInterval',
                                 'CompetitionOpenSinceMonth',
