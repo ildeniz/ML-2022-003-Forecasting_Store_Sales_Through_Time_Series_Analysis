@@ -41,11 +41,10 @@ Models used for hybrid boosting pairs:
 
 ## Model performance
 Top 5 pairs of hybris boosting (with default parameter arguments):
-- **LinearRegression & XGBRegresso**            : RMSPE = 0.1774
-- **Lasso & XGBRegressor**                      : RMSPE = 0.2014
-- **LinearRegression & ExtraTreesRegressor**    : RMSPE = 0.2071
-- **Lasso & RandomForestRegressor**             : RMSPE = 0.2087
-- **LinearRegression & RandomForestRegressor**  : RMSPE = 0.2089
-
+- **LinearRegression & XGBRegresso** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.1774
+- **Lasso & XGBRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2014
+- **LinearRegression & ExtraTreesRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2071
+- **Lasso & RandomForestRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2087
+- **LinearRegression & RandomForestRegressor** &nbsp;: RMSPE = 0.2089
 
 ## Productionization
