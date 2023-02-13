@@ -41,7 +41,7 @@ Models used for hybrid boosting pairs:
 - For Seasonality and Cycles: Extreme Gradient Boosting, Random Forest, Extra Trees, K-Nearest Neighbors, and Multi-layer Perceptron Regression,
 
 ## Model performance
-Top 5 pairs of hybris boosting (with default parameter arguments):
+Top 5 pairs of hybrid boosting (with default parameter arguments):
 - **LinearRegression & XGBRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.1774
 - **Lasso & XGBRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2014
 - **LinearRegression & ExtraTreesRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2071
