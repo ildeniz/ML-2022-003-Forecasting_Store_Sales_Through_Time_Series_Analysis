@@ -34,14 +34,15 @@ $$
 \textrm{RMSPE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left(\frac{y_i - \hat{y}_i}{y_i}\right)^2},
 $$
 
-I chose RMSPE since it was given as the evaluation criteria by Rossmann and also since the errors are squared before they are averaged, the RMSPE gives a relatively high weight to large errors. Hence, RMSPE penalizes really bad predictions.\
+I chose RMSPE since it was given as the evaluation criteria by Rossmann and also since the errors are squared before they are averaged, the RMSPE gives a relatively high weight to large errors. Hence, RMSPE penalizes really bad predictions.
+
 Models used for hybrid boosting pairs:
 - For Trend: Linear, ElasticNet, Lasso, and Ridge Regression
 - For Seasonality and Cycles: Extreme Gradient Boosting, Random Forest, Extra Trees, K-Nearest Neighbors, and Multi-layer Perceptron Regression,
 
 ## Model performance
 Top 5 pairs of hybris boosting (with default parameter arguments):
-- **LinearRegression & XGBRegresso** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.1774
+- **LinearRegression & XGBRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.1774
 - **Lasso & XGBRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2014
 - **LinearRegression & ExtraTreesRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2071
 - **Lasso & RandomForestRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2087
