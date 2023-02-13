@@ -48,4 +48,6 @@ Top 5 pairs of hybrid boosting (with default parameter arguments):
 - **Lasso & RandomForestRegressor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: RMSPE = 0.2087
 - **LinearRegression & RandomForestRegressor** &nbsp;: RMSPE = 0.2089
 
+LinearRegression & XGBRegressor Hybrid Model Results:
+![alt text](https://github.com/ildeniz/ildeniz_data_science_portfolio/blob/master/Images/Actual_vs_Prediction_comparison.png "LinearRegression & XGBRegressor Hybrid Model Results")
 ## Productionization
