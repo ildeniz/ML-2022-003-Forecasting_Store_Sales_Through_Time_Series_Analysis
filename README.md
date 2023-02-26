@@ -1,4 +1,10 @@
 # Data Science Store Sales Forecasting Through TSA: Project Overview
+This project aims to predict the average sales of a brand with multiple stores for a particular period following the last day of obtained data.
+This project is influenced by the Rossman Store Sales competition held in Kaggle, which ran from the 30th of September to the 12th of December, 2015. The data set is obtained from Kaggle.
+
+* Developed a hybrid model to predict the 1115 Rossmann stores' average daily sales for the next 60 days to give them useful insights to make more accurate budgeting process and ease financial decision making.
+* Engineered features through given data sets to eliminate trend, seasonality and cycle components to make the time series stationary and the predictions accurate.
+* Root Mean Square Percentage Error: 0.1774
 
 ## Code and Resources Used 
 **Python Version:** 3.9  
